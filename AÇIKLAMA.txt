@@ -1,0 +1,21 @@
+* Arkadaşlar robotumuza motor sürücü taktıktan sonra ilk olarak robotumuzu ileri-geri-sağa-sola yönlendirmiştik. Sensör vs takmamıştık.
+Orada yazdığımız kod " motor_kontrol" isimli klasörün içinde.
+
+* Unutmayın motor sürücünün IN1-IN2-IN3-IN4 isimli pinlerini arduinonun 3-5-6-9-10-11 nolu pinlerine bağlayabiliriz. Diğer pinlere bağlarsak hız kontrolü yapamayız. Biz 5-6 ve 9-10 nolu pinleri kullanmıştık.
+
+* Ardından engelden kaçan robot yapmıştık. Ultrasonik sensörü 12 ve 13 nolu pinlere takmıştık. Siz bu sensörün echo ve trig yazan pinlerini başka pinlere takmış iseniz koddan ya da kablolardan düzeltmelisiniz . 
+
+* Engelden kaçan robotun kodunu arkadaşınız Yusuf geliştirmişti. Engel gördüğünde rastgele sayı üreterek sağa ya da sola dönüyor. Her seferinde sabit bir şekilde sağa dönmüyordu.
+
+* Kumanda kontrolde öncelikle kumandadan gelen kodları okumuştuk.  Bunun için aşağıdaki satırın başında yer alan // işaretlerini silmemiz yeterli. Kumanda tuşlarına basarak Seri ekrandan gelen verileri okumuştuk.
+//Serial.println(results.value, HEX); 
+
+* Klasör içinde yer alan IRremote isimli klasöre sağ tıklayarak "klasöre çıkart" seçeneğini tıklıyoruz. Bunu belgelerim>arduino>libraries içine yapıştırmıştık. Açık aduino penceresi varsa kapatıp yeniden açmıştık. Bunu yapmazsak kütüphane çalışmayacaktır.
+
+* Kodları inceleyin. Mesela kumandada * tuşuna veya # tuşuna basınca ne oluyor anlamaya çalışın.
+
+** Pillerinizin gücü azaldığında arduinonun sanki reset tuşuna basılmış gibi davrandığını göreceksiniz. Arada bir üzerindeki ışıklar yanıp sönecektir. Size tavsiyem alkalin pil almanızdır. 
+
+** Takıldığınız yerlerde atanalper@gmail.com e-postamdan iletişime geçiniz.
+
+*** Çalışmaya kurcalamaya devam edin gençler yaz tatilinde güzel ve kaliteli zaman geçirmenizi sağlar.
