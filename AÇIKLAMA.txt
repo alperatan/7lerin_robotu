@@ -1,3 +1,14 @@
+*** Pandeminin başladığı sene 7. sınıflar için robotlarını nasıl kodlayacaklarını video çekerek anlatmıştım. Youtube kanalımdaki bu videoları mutlaka izleyiniz. 
+
+1- Motor kontrolü              https://youtu.be/lQtk6cmvpDY
+2- Engelden kaçan robot        https://youtu.be/2KYOvjHwTxA
+3- Kumanda kontrollü robot     https://youtu.be/Za2fwg-qSxQ
+4- Bluetooth kontrollü robot   https://youtu.be/DbUbyGTjKIY
+
+Dikkat: Videolardaki motor sürücü ile sizin ki arasında ufak bir fark var. o sürücüde toplamda 6 pin kullanılırken sizin sürücüde 4 pin kullanıyoruz. Ancak programın genel taslağı aynı. Mantığı anlamanız çok önemli.
+
+------------------
+
 * Arkadaşlar robotumuza motor sürücü taktıktan sonra ilk olarak robotumuzu ileri-geri-sağa-sola yönlendirmiştik. Sensör vs takmamıştık.
 Orada yazdığımız kod " motor_kontrol" isimli klasörün içinde.
 
