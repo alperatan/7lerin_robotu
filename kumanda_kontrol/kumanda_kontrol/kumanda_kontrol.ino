@@ -15,11 +15,11 @@ decode_results results;
 #define IR 8 // IR göz
 
 // ******* kumanda kodları  *******************
-#define ileri_tus 0x3D9AE3F7  //0xFF18E7
-#define OK_tus    0xDBC8CB72   // 0xFF38C7
+#define ileri_tus 0x3D9AE3F7  //0xFF18E7  
+#define OK_tus    0xFF38C7   // 0xDBC8CB72  // 0x488F3CBB
 #define geri_tus  0x1BC0157B  //0xFF4AB5
-#define sag_tus   0x449E79F  //0xFF5AA5
-#define sol_tus   0x8C22657B  //0xFF10EF
+#define sag_tus   0x449E79F  // 0xFF5AA5
+#define sol_tus   0xFF10EF   // 0x8C22657B
 
 #define yildiz_tus 0xFF6897
 #define kare_tus 0xFFB04F
@@ -83,27 +83,27 @@ void loop() {
   {    
     //Serial.println(results.value, HEX); // bu satır ile bilgisayarımızda gelen kodları görüyoruz
 //-------------------------------------    
-    if (results.value == ileri_tus)
+    if (results.value == ileri_tus || results.value == 0xFF18E7 )
     {
       ileri();     
     } 
 //-------------------------------------    
-if (results.value == geri_tus)
+if (results.value == geri_tus || results.value == 0xFF4AB5)
     {
       geri();     
     } 
 //-------------------------------------
-if (results.value == sol_tus)
+if (results.value == sol_tus || results.value == 0x8C22657B)
     {
       sola();     
     } 
 //------------------------------------- 
-if (results.value == sag_tus)
+if (results.value == sag_tus || results.value == 0xFF5AA5)
     {
       saga();     
     } 
 //-------------------------------------    
-if (results.value == OK_tus)
+if (results.value == OK_tus || results.value == 0x488F3CBB)
     {
       dur(); 
     }
